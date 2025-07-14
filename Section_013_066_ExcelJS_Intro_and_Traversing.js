@@ -1,5 +1,5 @@
-//Section 13.67: Introduction to excelJS node module and setting up JS Project
-//Section 13.68: Traversing rows and columns of excel worksheet with excelJS library
+//Section 13.66: Introduction to excelJS node module and setting up JS Project
+//Section 13.67: Traversing rows and columns of excel worksheet with excelJS library
 
 //ExcelJS is used to read, manipulate and write spreadsheet data and styles to XLSX and JSON.
 
@@ -15,7 +15,7 @@ async function outputCellValues() {
   //This is the reason we have this code wrapped in an "async" function:
   //Now link the path of the Excel file you want to work with.
   //Need to use "await" as JS will attempt to execute the subsequent code before actually reading the file:
-  await workbook.xlsx.readFile("C:/Users/Roscoe/Downloads/excel_download_test.xlsx");
+  await workbook.xlsx.readFile("C:/Users/Roscoe/Desktop/Projects/ExcelJS-practice/excel_download_test.xlsx");
 
   //Workbooks can have multiple "sheets" (the tabs at the bottom in Excel).
   //You need to specify the worksheet within the workbook first, using "getWorksheet()":
